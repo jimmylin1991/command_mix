@@ -1,0 +1,1 @@
+for i in `docker images |grep 192.168.128.1:30443/ai_znm/|awk '{print $1}'|sort |uniq ` ; do if [ $(docker images |grep ${i} |wc -l) -lt 3 ];then continue; else docker images |grep ${i}|awk '{print $1":"$2}'|sed -n '3,$p'|xargs -i sh -c "docker rmi {}";fi   ;done 
