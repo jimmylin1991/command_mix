@@ -1,2 +1,3 @@
 收集各种便利一键执行脚本和日常高效工具方法
-1、一键导出镜像包 
+1、一键导出镜像包：export_image_tar_by_service_tag
+2、一键清除多余镜像：delete_image
