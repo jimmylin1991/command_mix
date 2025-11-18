@@ -1,0 +1,1 @@
+while IFS=':' read -r service version;do if [ -f ${service}_${version}.tar ];then continue ;else docker images|grep ${service}|grep ${version} >/dev/null 2>&1 && docker save -o ${service}_${version}.tar 192.168.128.1:30443/ai_znm/${service}:${version}||echo "$service can get images: $version" ;fi;done < a.txt
