@@ -1,0 +1,9 @@
+llm-workflow-service
+llm-plugin-tools-service
+llm-inference-service
+vmp-search-service
+llm-inference-front
+llm-workflow-front
+llm-cmstore-front
+llm-playground-service
+llm-scheduler-service
